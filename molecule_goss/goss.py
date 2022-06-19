@@ -117,7 +117,7 @@ class Goss(Verifier):
     def bake(self):
         pass
 
-    def execute(self):
+    def execute(self, action_args=None):
         if not self.enabled:
             msg = "Skipping, verifier is disabled."
             LOG.warning(msg)
